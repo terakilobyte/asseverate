@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
-import "./App.css"
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 class App extends Component {
   render() {
@@ -18,8 +18,8 @@ class App extends Component {
           </p>
         </div>
       </MuiThemeProvider>
-    )
+    );
   }
 }
 
-export default App
+export default App;
