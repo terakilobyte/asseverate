@@ -8,11 +8,15 @@ import { Button, Welcome } from "@storybook/react/demo"
 
 import App from "../App"
 
+import GameBar from "../components/GameBar"
+
 storiesOf("Default View", module).add("stuff", () => <App />)
 
 storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("Button")} />
 ))
+
+storiesOf("GameBar", module).add("Default", () => <GameBar />)
 
 storiesOf("Button", module)
   .add("with text", () => (

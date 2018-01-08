@@ -1,23 +1,26 @@
 import React, { Component } from "react"
+import GameBar from "./components/GameBar"
 import logo from "./logo.svg"
+import asseverate from "./ASSEVERATE.png"
 import "./App.css"
-
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
+import Reboot from "material-ui/Reboot"
 
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
+      <div>
+        <Reboot />
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={asseverate} className="App-logo" alt="logo" />
             <h1 className="App-title">Don't Be Evil</h1>
           </header>
+          <GameBar />
           <p className="App-intro">
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
         </div>
-      </MuiThemeProvider>
+      </div>
     )
   }
 }
